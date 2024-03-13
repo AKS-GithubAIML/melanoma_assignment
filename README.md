@@ -1,5 +1,7 @@
-# Project Name
-> Outline a brief description of your project.
+# Project Name - Melanoma Detection Assignment
+> **Problem statement:** To build a CNN based model which can accurately detect melanoma. Melanoma is a type of cancer that can be deadly if not detected early.
+> It accounts for 75% of skin cancer deaths. A solution that can evaluate images and alert dermatologists about the presence of melanoma has the potential to reduce a lot of manual effort needed in diagnosis.
+
 
 
 ## Table of Contents
@@ -11,38 +13,40 @@
 <!-- You can include any other section that is pertinent to your problem -->
 
 ## General Information
-- Provide general information about your project here.
-- What is the background of your project?
-- What is the business probem that your project is trying to solve?
-- What is the dataset that is being used?
+- Data Reading - Mounted google drive with google colab
+- Dataset Creation - Generated Train and Test folder with a batch size of 32 and 180*180 pixels
+- Dataset visualisation
+- Model Building & training - Created CNN model with 9 O/P classes. Used Rescaling, Convolution Layers, MaxPooling, Dropout, Flatten, Fully Connected Dense Layers
+- Used Data Augmentation Technics for Over-fitting
+- Checked the distribution of data for class imbalance
+- Fixed imbalance problem using Augmentor
 
 <!-- You don't have to answer all the questions - just the ones relevant to your project. -->
 
 ## Conclusions
-- Conclusion 1 from the analysis
-- Conclusion 2 from the analysis
-- Conclusion 3 from the analysis
-- Conclusion 4 from the analysis
+- Final model came with more than 80% Training Accuracy and more than 76% of validation accuracy
+- BatchNormalization was not a big help and dropped in the final model
+- Training Loss and Validation loss are converging towards 0 which is good indication for the model
+- There is very low difference between Training Loss and Validation loss thus the Final model generalized it well
 
 <!-- You don't have to answer all the questions - just the ones relevant to your project. -->
 
 
 ## Technologies Used
-- library - version 1.0
-- library - version 2.0
-- library - version 3.0
+- Used Tensorflow
+- User Keras Libraries 
+- Used numpy
+- Used pandas
 
 <!-- As the libraries versions keep on changing, it is recommended to mention the version of library used in this project -->
 
 ## Acknowledgements
 Give credit here.
-- This project was inspired by...
-- References if any...
-- This project was based on [this tutorial](https://www.example.com).
+- This project was inspired by UpGrad Assignment
 
 
 ## Contact
-Created by [@githubusername] - feel free to contact me!
+Created by [@AKS-GithubAIML] - feel free to contact me!
 
 
 <!-- Optional -->
